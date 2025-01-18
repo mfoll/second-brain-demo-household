@@ -1,0 +1,22 @@
+---
+type: Person
+belongs_to: "[[run-the-house]]"
+related_to:
+  - "[[replace-the-minivan]]"
+  - "[[minivan-service-history]]"
+  - "[[minivan-transmission-quote-2026-08-21]]"
+_organized: true
+---
+
+# Joon-ho Bae
+
+Owner of Bae Auto Service, which has serviced both cars since 2019. He keeps his own service records and emails a PDF after each visit; the PDFs are in Paperless-ngx and summarized in [[minivan-service-history]].
+
+## How We Work Together
+
+Oil and [[tire-rotation]] on both cars every 7,500 miles, booked online. He phones before any repair over $300. He is honest about what can wait: in 2025 he told us to skip a $600 suspension job on the Tessera for a year, and it was fine.
+
+## Current Threads
+
+- Quoted $3,400 for a rebuilt transmission on the Tessera on 2026-08-21 ([[minivan-transmission-quote-2026-08-21]]). He said it would likely last but suggested a second opinion because of the money involved. He also said, unprompted, that he would not want his own teenager in a 2014 car without emergency braking if there was a choice; I noted that for [[should-maya-drive-the-old-minivan]] but it is his opinion, not a mechanic's finding.
+- Will do a pre-purchase inspection ($150) on whichever SUV we shortlist.
