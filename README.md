@@ -12,6 +12,8 @@ A demo Second Brain: about 500 linked Markdown notes holding the working memory 
 
 ![Brierly Household Brain in Brain Graph, colored by the Project or Responsibility each note rolls up to](assets/brierly-household-brain-graph.png)
 
+**[Explore this vault in the live demo](https://mfoll.github.io/brain-graph-demo/?vault=brierly-household-brain)**: its map in Brain Graph, in your browser, with nothing to install.
+
 > [!warning]
 > Everything about the household is fictional: the Brierly family, every person, the town of Pellbrook, the employers, school, contractors, care agency, insurer, credit union, health plan, car and appliance brands, destinations and every number. Any resemblance to real people or organizations is accidental. Only the Sources marked as encyclopedia articles or tool documentation are real.
 
