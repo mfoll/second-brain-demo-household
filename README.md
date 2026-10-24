@@ -8,7 +8,7 @@ surface_for:
 
 # Brierly Household Brain
 
-A demo Second Brain: about 500 linked Markdown notes holding the working memory of a fictional family household. Clone it, open the folder, and explore what a personal vault looks like after two years of daily use: a renovation, an ageing parent's care, two teenagers, health admin, money and taxes, trips, cars and appliances, and the decisions and open questions that connect them.
+A demo Second Brain: about 530 linked Markdown notes holding the working memory of a fictional family household. Clone it, open the folder, and explore what a personal vault looks like after two years of daily use: a renovation, an ageing parent's care, two teenagers, health admin, money and taxes, trips, cars and appliances, and the decisions and open questions that connect them.
 
 ![Brierly Household Brain in Brain Graph, colored by the Project or Responsibility each note rolls up to](assets/brierly-household-brain-graph.png)
 
@@ -28,11 +28,11 @@ The vault was deployed from the [Second Brain template](https://github.com/mfoll
 | Real material | About 60 Sources are real Wikipedia articles or tool documentation pages, cited with title, URL and access date, summarized in our own words. Their "Why It Matters" sections describe how the fictional family used them. |
 | Privacy | Medical and financial details stay in their own systems (patient portals, a password manager, a scanned document archive, a fire safe); the vault records where they are, who has access and what was decided. Notes about the teenagers stay factual and minimal. |
 | Operations | `AGENTS.md`, Type notes, Procedures, Skills and ADRs from the template, unchanged except for the deployment steps. |
-| History | Git history from January 2025 to October 2026, one commit per month of captures. |
+| History | Git history from January 2025 to October 2026, one commit for each month that had captures. |
 
 ## Open it
 
-- **Any Markdown editor.** Clone the repository and open the folder. Start from [[vault]].
+- **Any Markdown editor.** Clone the repository and open the folder; notes sit flat at the root by design. Start from [vault](vault.md).
 - **[Tolaria](https://tolaria.md/).** Open the folder as a vault for typed sidebars, relationship panels and saved views.
 - **[Brain Graph](https://github.com/mfoll/brain-graph).** See the whole vault as a map colored by project:
 
@@ -40,7 +40,7 @@ The vault was deployed from the [Second Brain template](https://github.com/mfoll
   npx github:mfoll/brain-graph path/to/second-brain-demo-household
   ```
 
-- **A coding agent.** Run Claude Code, Codex or Gemini CLI in the folder. They read [[AGENTS]] (through `CLAUDE.md` and `GEMINI.md` where needed) and follow the vault's Procedures.
+- **A coding agent.** Run Claude Code, Codex or Gemini CLI in the folder. They read [AGENTS](AGENTS.md) (through `CLAUDE.md` and `GEMINI.md` where needed) and follow the vault's Procedures.
 
 ## Try this
 
@@ -48,20 +48,20 @@ Each question has a known answer in the vault, so you can check what an agent fi
 
 | Ask | Where the answer lives |
 | --- | --- |
-| Why did we put a curbless shower in the hall bathroom? | A design meeting on 2025-11-18 chose it for Mom's visits and for our own later years. See [[hall-bathroom-remodel]] and [[bathroom-design-meeting-2025-11-18]]. |
-| Which health plan are we choosing for 2027, and why not stay on the high-deductible plan? | Chosen on 2025-11-10, partly reversed on 2026-10-21. See [[open-enrollment-2027]], [[open-enrollment-review-2026-10-21]] and the daily Recap of 2026-10-21. |
-| What did we agree about Mom's care, and who disagrees? | A family call on 2026-07-26 agreed an aide trial; one sibling still wants a different plan. See [[family-care-call-2026-07-26]]. |
-| Should Mom stay in her house? | Still open. See [[should-mom-stay-in-her-house]]. |
-| How far over budget is the renovation, and what did it cost us elsewhere? | Two change orders and the appliances; the overrun drew down the emergency fund. See [[renovation-budget-tracker]] and [[emergency-fund-rebuild]]. |
-| Why are we replacing the minivan now? | A new teen driver, an old car and a repair quote; the parents disagree. See [[replace-the-minivan]] and [[should-maya-drive-the-old-minivan]]. |
-| Where do we keep Mom's medical information? | Not in the vault. See [[moms-care-documents-index]] and [[sensitive-records-stay-at-source]]. |
+| Why did we put a curbless shower in the hall bathroom? | A design meeting on 2025-11-18 chose it for Mom's visits and for our own later years. See [hall-bathroom-remodel](hall-bathroom-remodel.md) and [bathroom-design-meeting-2025-11-18](bathroom-design-meeting-2025-11-18.md). |
+| Which health plan are we choosing for 2027, and why not stay on the high-deductible plan? | Chosen on 2025-11-10, partly reversed on 2026-10-21. See [open-enrollment-2027](open-enrollment-2027.md), [open-enrollment-review-2026-10-21](open-enrollment-review-2026-10-21.md) and the daily Recap of 2026-10-21. |
+| What did we agree about Mom's care, and who disagrees? | A family call on 2026-07-26 agreed an aide trial; one sibling still wants a different plan. See [family-care-call-2026-07-26](family-care-call-2026-07-26.md). |
+| Should Mom stay in her house? | Still open. See [should-mom-stay-in-her-house](should-mom-stay-in-her-house.md). |
+| How far over budget is the renovation, and what did it cost us elsewhere? | Two change orders and the appliances; the overrun drew down the emergency fund. See [renovation-budget-tracker](renovation-budget-tracker.md) and [emergency-fund-rebuild](emergency-fund-rebuild.md). |
+| Why are we replacing the minivan now? | A new teen driver, an old car and a repair quote; the parents disagree. See [replace-the-minivan](replace-the-minivan.md) and [should-maya-drive-the-old-minivan](should-maya-drive-the-old-minivan.md). |
+| Where do we keep Mom's medical information? | Not in the vault. See [moms-care-documents-index](moms-care-documents-index.md) and [sensitive-records-stay-at-source](sensitive-records-stay-at-source.md). |
 
 Workflows to try with an agent:
 
 - **Resume a project:** "Resume the Kitchen And Bath Renovation."
 - **Process the Inbox:** about eight raw captures from the last weeks of October 2026 have `_organized: false`; each has an obvious home.
 - **Ingest a source:** give any Wikipedia article on home renovation, caregiving or household budgeting and ask where it belongs.
-- **Lint the vault:** the audits should find one unresolved link, one homeless Concept and one Person reachable only through `has`, all left in on purpose.
+- **Lint the vault:** the audits should report one link to a missing note, one Person reached only through a Project's `has` list and one Concept that belongs to nothing, all left in on purpose. Informational lines, such as external contacts without a parent, are expected.
 
 ## Scope and privacy
 
@@ -69,7 +69,7 @@ The fictional family's house, cars and appliances, the care of Nathan's mother, 
 
 ## Template updates
 
-The vault was deployed from the template on 2026-10-23. Later template improvements can be ported with [[upgrade-existing-vault-from-template|Upgrade an Existing Vault From the Template]], as a reviewed change: an agent proposes each port, and a person approves it. Never run it unattended. A vault in use is expected to differ from the template on purpose, in its ADRs, Procedures, Skills and instructions.
+The vault was deployed from the template on 2026-10-23. Later template improvements can be brought in with [Upgrade an Existing Vault From the Template](upgrade-existing-vault-from-template.md), as a reviewed change: an agent proposes each change, and a person approves it. Never run it unattended. A vault in use is expected to differ from the template on purpose, in its ADRs, Procedures, Skills and instructions.
 
 ## How it was made
 
@@ -77,7 +77,7 @@ An AI agent drafted the world specification (the family, people, projects, timel
 
 ## Storage and backup
 
-Git history in this repository. A demo that edits notes can be reset with `git checkout .` and `git clean -fd`.
+The notes are plain files, and their history is this Git repository. To undo edits made while trying the demo, run `git checkout .`; `git clean -n` lists any new files, which `git clean -f` would delete.
 
 ## More example vaults
 
